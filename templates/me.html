@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="section">
+  <div class="panel">
+    <div class="panel-inner hero-grid">
+      <div>
+        <h2 class="h2">Signed in</h2>
+        <p class="muted">Session-based auth with a 10-line core.</p>
+
+        <div class="kv">
+          <div class="kv-row">
+            <span class="kv-k">Email</span>
+            <span class="kv-v">{{ user.email if user else "unknown" }}</span>
+          </div>
+          <div class="kv-row">
+            <span class="kv-k">User ID</span>
+            <span class="kv-v">{{ session.get("uid") }}</span>
+          </div>
+        </div>
+
+        <div class="hero-actions">
+          <a class="btn btn--ghost" href="{{ url_for('index') }}">Home</a>
+          <a class="btn btn--primary" href="{{ url_for('logout') }}">
+            <span class="btn-glow" aria-hidden="true"></span>
+            Logout
+          </a>
+        </div>
+      </div>
+
+      <div class="tile">
+        <h2 class="h2">Drop-in core</h2>
+        <p class="muted">Copy <code>plex_auth.py</code> into any Flask app, then protect routes with <code>@login_required</code>.</p>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

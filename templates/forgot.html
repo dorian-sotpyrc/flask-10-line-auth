@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="center">
+  <div class="panel" style="max-width:560px; width:100%;">
+    <div class="panel-inner">
+      <h2 class="h2">Reset password</h2>
+      <p class="muted">Safe placeholder: we never reveal whether an email exists.</p>
+
+      <form method="post" class="form">
+        <label class="field">
+          <span>Email</span>
+          <input class="input" name="email" type="email" autocomplete="email" placeholder="you@company.com" required />
+        </label>
+
+        <div class="row">
+          <a class="link" href="{{ url_for('login') }}">Back to login</a>
+          <a class="link" href="{{ url_for('signup') }}">Sign up instead</a>
+        </div>
+
+        <button class="btn btn--primary" type="submit" style="width:100%;">
+          <span class="btn-glow" aria-hidden="true"></span>
+          Send reset link
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+{% endblock %}

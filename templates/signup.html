@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="center">
+  <div class="panel" style="max-width:560px; width:100%;">
+    <div class="panel-inner">
+      <h2 class="h2">Sign up</h2>
+      <p class="muted">Create an account in seconds.</p>
+
+      <form method="post" class="form">
+        <label class="field">
+          <span>Email</span>
+          <input class="input" name="email" type="email" autocomplete="email" placeholder="you@company.com" required />
+        </label>
+
+        <label class="field">
+          <span>Password</span>
+          <input class="input" name="password" type="password" autocomplete="new-password" placeholder="Min 8 characters" required />
+        </label>
+
+        <div class="row">
+          <a class="link" href="{{ url_for('login') }}">Already have an account?</a>
+        </div>
+
+        <button class="btn btn--primary" type="submit" style="width:100%;">
+          <span class="btn-glow" aria-hidden="true"></span>
+          Create account
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+{% endblock %}

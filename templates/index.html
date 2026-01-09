@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="hero">
+  <div class="panel">
+    <div class="panel-inner hero-grid">
+      <div>
+        <h1 class="h1">
+          From Zero to <span class="h1-accent">Sign-In</span>.
+        </h1>
+        <p class="lead">
+          A reusable <strong>10-line Flask auth core</strong> with a polished, modern PLEX UI.
+          Clone it, run it, then copy the core into your app.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn btn--primary" href="{{ url_for('signup') }}">
+            <span class="btn-glow" aria-hidden="true"></span>
+            Create account
+          </a>
+          <a class="btn btn--ghost" href="{{ url_for('login') }}">Log in</a>
+        </div>
+      </div>
+
+      <div class="tile" aria-label="What you get">
+        <h2 class="h2">Included</h2>
+        <p class="muted">Session auth • Werkzeug hashing • SQLite demo • Drop-in core</p>
+        <div class="kv">
+          <div class="kv-row"><span class="kv-k">Core</span><span class="kv-v">10 lines</span></div>
+          <div class="kv-row"><span class="kv-k">Storage</span><span class="kv-v">SQLite</span></div>
+          <div class="kv-row"><span class="kv-k">Hashing</span><span class="kv-v">PBKDF2</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}
