@@ -115,7 +115,7 @@ This repo is explained in more detail in the PLEX article:
 * Add rate-limiting for login attempts
 * Add “remember me” (rotating session IDs)
 
-## SEO Keywords
+## Keywords
 
 flask authentication, session auth, login required decorator, minimal auth pattern, werkzeug password hashing, sqlite flask login, flask sign up page, secure redirects, plex ui
 
