@@ -8,7 +8,7 @@ This repo shows a practical auth baseline for small Flask apps:
 - A minimal, production-shaped login + signup flow (hashed passwords, safe redirects)
 - A polished PLEX-style UI (no frameworks)
 
-This supports the PLEX article: **“From Zero to Sign-In: A 10-Line Flask Auth Pattern You Can Reuse Anywhere”** (link placeholder).
+Part of the PLEXData tutorials: https://plexdata.online/?utm_source=github&utm_medium=repo&utm_campaign=flask-10-line-auth#articles
 
 ## Features
 - ✅ **10-line auth core**: `login_user`, `logout_user`, `current_uid`, `@login_required`
@@ -103,9 +103,7 @@ def me():
 
 ## PLEX article & context
 
-This repo is explained in more detail in the PLEX article:
-
-* `/post/from-zero-to-sign-in-a-10-line-flask-auth-pattern` (placeholder)
+More tutorials and field notes: https://plexdata.online/?utm_source=github&utm_medium=repo&utm_campaign=flask-10-line-auth#articles
 
 ## Roadmap / Extensions
 
